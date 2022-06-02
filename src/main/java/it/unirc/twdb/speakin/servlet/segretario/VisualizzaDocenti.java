@@ -34,7 +34,7 @@ public class VisualizzaDocenti extends HttpServlet {
 		DocenteDAO docenteDAO = new DocenteDAO();
 		Vector<Docente> docenti = docenteDAO.getAll();
 		request.setAttribute("docenti", docenti);
-		request.getRequestDispatcher(request.getContextPath()+"/WEB-INF/segretario/amministrazione/docente.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/segretario/amministrazione/docente.jsp").forward(request, response);
 	}
 
 }

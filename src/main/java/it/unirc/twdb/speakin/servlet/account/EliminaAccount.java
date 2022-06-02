@@ -45,14 +45,17 @@ public class EliminaAccount extends HttpServlet {
 		if (account.getType() == 1) {
 			Studente studente = (Studente) session.getAttribute("studente");
 			StudenteDAO studenteDAO = new StudenteDAO();
+			studenteDAO.cancella(studente);
 		} else if (account.getType() == 1) {
 			Docente docente = (Docente) session.getAttribute("docente");
 			DocenteDAO docenteDAO = new DocenteDAO();
 		} else {
 			Segretario segretario = (Segretario) session.getAttribute("segretario");
 			SegretarioDAO segretarioDAO = new SegretarioDAO();
+			
 		}
 
+		accountDAO.cancella(account);		
 		session.invalidate();
 	}
 

@@ -57,7 +57,7 @@ public class VisualizzaCorso extends HttpServlet {
 		request.setAttribute("corso", corso);
 		request.setAttribute("iscritti", iscritti);
 		request.setAttribute("docenti", docenti);
-		request.getRequestDispatcher(request.getContextPath()+"corso.jsp").forward(request, response);
+		request.getRequestDispatcher("corso.jsp").forward(request, response);
 	}
 
 }

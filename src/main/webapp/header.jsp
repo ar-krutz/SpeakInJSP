@@ -14,9 +14,9 @@
 						</div>
 						<nav class="main_nav_contaner">
 							<ul class="main_nav">
-								<li><a href="/TornaHomePage">Home</a></li>
-								<li><a href="/VisualizzaCorsiHomePage">Corsi</a></li>
-								<li><a href="/VisualizzaDocentiHomePage">Docenti</a></li>
+								<li><a href="<%= request.getContextPath() %>/TornaHomePage">Home</a></li>
+								<li><a href="<%= request.getContextPath() %>/VisualizzaCorsiHomePage">Corsi</a></li>
+								<li><a href="<%= request.getContextPath() %>/VisualizzaDocentiHomePage">Docenti</a></li>
 								<li><a href="#">Eventi</a></li>
 								<li><a href="contact.html">Contatti</a></li>
 							</ul>

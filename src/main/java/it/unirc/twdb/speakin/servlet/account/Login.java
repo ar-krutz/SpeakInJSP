@@ -66,7 +66,7 @@ public class Login extends HttpServlet {
 			session.setAttribute("attributi", attributi);
 		}
 		session.setAttribute("account", new Account(email, password, type));
-		request.getRequestDispatcher(request.getContextPath() + "/WEB-INF/Account/AreaRiservata.jsp").forward(request,
+		request.getRequestDispatcher("/WEB-INF/Account/AreaRiservata.jsp").forward(request,
 				response);
 	}
 

@@ -45,9 +45,9 @@
 				<div class="col-lg-4 instructor_col">
 					<div class="instructor text-center">
 						<div class="instructor_image_container">
-							<div class="instructor_image"><img src="images/Docenti/<%=ids.get(count) %>" alt=""></div>
+							<div class="instructor_image"><img src="<%= d.getPicPath(getServletContext().getRealPath("/")) %>" alt=""></div>
 						</div>
-						<div class="instructor_name"><a href="/Docente?id=<%= d.getCodiceDocente() %>"><%=d.getNome() %> <%= d.getCognome() %></a></div>
+						<div class="instructor_name"><a href="<%= request.getContextPath() %>/Docente?id=<%= d.getCodiceDocente() %>"><%=d.getNome() %> <%= d.getCognome() %></a></div>
 						<div class="instructor_title">Docente di <%= d.getLingua() %></div>
 						<div class="instructor_text">
 							<p>+39 <%= d.getNumeroTelefono() %> <%= d.getIndirizzoEMail() %></p>

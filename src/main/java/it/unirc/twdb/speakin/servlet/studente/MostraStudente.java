@@ -41,7 +41,7 @@ public class MostraStudente extends HttpServlet {
 		
 		Studente studente = studenteDAO.get(stud, mode).get(0);
 		request.setAttribute("sres", studente);
-		request.getRequestDispatcher(request.getContextPath()+"/WEB-INF/Admin/studente.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/Admin/studente.jsp").forward(request, response);
 	}
 
 }

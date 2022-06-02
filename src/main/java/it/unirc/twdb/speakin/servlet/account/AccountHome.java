@@ -29,6 +29,6 @@ public class AccountHome extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		if(session.getAttribute("account") == null) request.getRequestDispatcher(request.getContextPath()+"/login.jsp").forward(request, response);
-		else request.getRequestDispatcher(request.getContextPath()+"/WEB-INF/Account/areaRiservata.jsp").forward(request, response);
+		else request.getRequestDispatcher("/WEB-INF/Account/areaRiservata.jsp").forward(request, response);
 	}
 }

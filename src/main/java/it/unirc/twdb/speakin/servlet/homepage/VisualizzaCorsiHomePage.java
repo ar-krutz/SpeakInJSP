@@ -57,7 +57,7 @@ public class VisualizzaCorsiHomePage extends HttpServlet {
 		request.setAttribute("lingue", lingue);
 		request.setAttribute("iscritti", iscritti);
 		
-		request.getRequestDispatcher(request.getContextPath()+"corsi.jsp").forward(request, response);
+		request.getRequestDispatcher("corsi.jsp").forward(request, response);
 	}
 
 }

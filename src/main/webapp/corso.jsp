@@ -43,9 +43,9 @@
 							<div class="intro_title"><%= corso.getLingua() %> <%= corso.getLivello() %></div>
 							<div class="intro_meta">		
 								<div class="intro_image"><img src="images/Docenti/<%= docenti.get(0).getCodiceDocente() %>" alt="" style="width: 100%; height: 100%;"></div>
-								<div class="intro_instructors"><a href="/VisualizzaDocente?id=<%= docenti.get(0).getCodiceDocente() %>"><%= docenti.get(0).getNome() %> <%= docenti.get(0).getCognome() %></a>
+								<div class="intro_instructors"><a href="<%= request.getContextPath() %>/VisualizzaDocente?id=<%= docenti.get(0).getCodiceDocente() %>"><%= docenti.get(0).getNome() %> <%= docenti.get(0).getCognome() %></a>
 								 <%if(docenti.size()>1){ %>
-								 e <span><a href="/VisualizzaDocentiHomePage">altri <%= docenti.size()-1 %> docenti</a></span>
+								 e <span><a href="<%= request.getContextPath() %>/VisualizzaDocentiHomePage">altri <%= docenti.size()-1 %> docenti</a></span>
 								 <%} %></div>
 							</div>
 						</div>

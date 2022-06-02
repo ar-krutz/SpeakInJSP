@@ -41,7 +41,7 @@ public class MostraTutti extends HttpServlet {
 		}
 		
 		request.setAttribute("id", ids);
-		request.getRequestDispatcher(request.getContextPath()+"/WEB-INF/Admin/mostraTutti.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/Admin/mostraTutti.jsp").forward(request, response);
 		//response.getWriter().append("Studenti: " + studenti);
 	}
 }

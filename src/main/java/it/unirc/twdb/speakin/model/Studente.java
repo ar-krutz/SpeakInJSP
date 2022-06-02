@@ -112,9 +112,9 @@ public class Studente {
 		this.numeroTelefono = numeroTelefono;
 	}
 	
-	public String getPicPath() {
-		String path = "images/Studenti/" + this.indirizzoEMail;
-		File check = new File(path);
+	public String getPicPath(String realPath) {
+		String path = "images/Studenti/" + this.matricola;
+		File check = new File(realPath + path);
 		if(check.exists()==false) path = "images/standard.jpg";
 		return path;
 	}

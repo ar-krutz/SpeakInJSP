@@ -66,7 +66,7 @@ public class Registrazione extends HttpServlet {
 
 		session.setAttribute("account", account);
 		session.setAttribute("attributi", studente);
-		request.getRequestDispatcher(request.getContextPath() + "/WEB-INF/Account/AreaRiservata.jsp").forward(request,
+		request.getRequestDispatcher("/WEB-INF/Account/AreaRiservata.jsp").forward(request,
 				response);
 	}
 

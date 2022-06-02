@@ -40,7 +40,7 @@ public class VisualizzaDocentiHomePage extends HttpServlet {
 		}
 		
 		request.setAttribute("id", ids);
-		request.getRequestDispatcher(request.getContextPath()+"/docenti.jsp").forward(request, response);
+		request.getRequestDispatcher("docenti.jsp").forward(request, response);
 	}
 
 }

@@ -1,4 +1,5 @@
 package it.unirc.twdb.speakin.model;
+import java.io.File;
 import java.util.Date;
 
 public class Docente {
@@ -119,6 +120,13 @@ public class Docente {
 
 	public void setLingua(String lingua) {
 		this.lingua = lingua;
+	}
+	
+	public String getPicPath(String realPath) {
+		String path = "images/Docenti/" + this.codiceDocente;
+		File check = new File(realPath + path);
+		if(check.exists()==false) path = "images/standard.jpg";
+		return path;
 	}
 	
 }
